@@ -1,10 +1,10 @@
 # 011 변수 사용하기
 # 삼성전자라는 변수로 50,000원을 바인딩해보세요. 삼성전자 주식 10주를 보유하고 있을 때 총 평가금액을 출력하세요.
 삼성전자 = 50000
-print(삼성전자 * 5)
+print(삼성전자 * 10)
 # 문제 정답
 # 삼성전자 = 50000
-# 총평가금액 = 삼성전자 * 5
+# 총평가금액 = 삼성전자 * 10
 # print(총평가금액)
 
 # 012 변수 사용하기
@@ -64,7 +64,7 @@ print(type(a)) # <class 'str'>
 # >> num_str = "720"
 num_str = "720"
 num_int = int(num_str)
-print(type(num_int))
+print(num_int ,type(num_int))
 # 문제정답
 # num_str = "720"
 # num_int = int(num_str)
