@@ -92,8 +92,7 @@ print(url[-2:])
 # 실행 예:
 # Abcdfe2A354A32A
 string3 = 'abcdfe2a354a32a'
-# print(string3.replace('a','A'))
-string3.upper('a','A')
+print(string3.replace('a','A'))
 # 정답 확인
 # string = 'abcdfe2a354a32a'
 # string = string.replace('a', 'A')
@@ -113,5 +112,22 @@ print(string) # aBcd
 # replace 메서드를 사용하면 원본은 그대로 둔채로 변경된 새로운 문자열 객체를 리턴해줍니다.
 
 #알고리듬
-
-
+a = int(input())  # 횟수
+b = []  # 백업
+for i in range(a):
+    s = int(input())  # 선택
+    if s == 0:
+        if len(b) < 10:
+            n = int(input())  # 입력
+            b.append(n)
+        else:
+            print('overflow')
+    elif s == 1:
+        if len(b) > 0:
+            b.pop(-1)
+        else:
+            print('underflow')
+    else:
+        break
+for j in b:
+    print(j, end=' ')
