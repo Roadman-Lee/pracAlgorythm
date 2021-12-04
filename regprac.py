@@ -1,5 +1,8 @@
-import re
+def solution(phone_number):
+    answer = ""
+    nums = len(phone_number) - 4
+    answer = (nums * "*") + phone_number[-4:]
+    return answer
 
-p = re.compile("[a-zA-Z]+")
-m = p.search("3pythonisNojam")
-print(m)
+
+print(solution("01074564442"))
